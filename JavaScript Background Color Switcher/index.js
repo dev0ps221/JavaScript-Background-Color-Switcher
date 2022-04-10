@@ -41,8 +41,21 @@
 
 
 // With 1 Function
-
+/*
 function changeBackground(color) {
     document.body.style.background = color;
     document.body.style.transition = '1s';
 }
+*/
+//With one function and the element you want
+function changeBackground(element,color) {
+    element.style.background = color;
+    element.style.transition = '1s';
+}
+/*
+    examples:
+    changeBackround(document.body,'red'); //for the body 
+    changeBackround(document.querySelectorAll("p"),'red'); //for all the p elements in the document
+    
+
+*/
